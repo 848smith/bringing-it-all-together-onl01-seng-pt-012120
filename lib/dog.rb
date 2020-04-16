@@ -73,6 +73,6 @@ class Dog
   end
   
   def update
-    
+    DB[:conn].execute("UPDATE ")
   end
 end
