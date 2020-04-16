@@ -59,7 +59,8 @@ class Dog
     if self.find_by_id(hash[0])
       nil
     else
-      self.create(hash)
+      dog = self.create(hash)
     end
+    dog
   end
 end
