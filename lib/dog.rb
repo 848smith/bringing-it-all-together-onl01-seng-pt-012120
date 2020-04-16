@@ -11,4 +11,8 @@ class Dog
   def self.create_table
     "CREATE TABLE dogs"
   end
+  
+  def self.drop_table
+    
+  end
 end
