@@ -56,7 +56,7 @@ class Dog
   end
   
   def self.find_or_create_by(name:, breed:)
-    DB[:conn].execute("SELECT * FROM dogs WHERE name = ? AND breed = ?")
+    DB[:conn].execute("SELECT * FROM dogs WHERE name = ? AND breed = ?", name, breed)
     if !dog.empty?
       nil
     else
