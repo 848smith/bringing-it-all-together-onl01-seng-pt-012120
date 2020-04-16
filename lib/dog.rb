@@ -60,5 +60,6 @@ class Dog
       nil
     else
       self.create(hash)
+    end
   end
 end
